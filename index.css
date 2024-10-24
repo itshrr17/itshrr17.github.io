@@ -1,0 +1,75 @@
+html, body {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  color: #333;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section {
+  padding: 2rem;
+  text-wrap: pretty;
+  font-weight: 500;
+  /* text-shadow: -0.5px 0px #333; */
+  user-select: none;
+}
+
+udl {
+  text-decoration: underline 0.2em;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 300ms;
+}
+
+section:hover udl, section:focus udl {
+  text-decoration-color: #ffee81;
+}
+
+svg {
+  width: 20px;
+  fill: black;
+}
+
+svg:hover {
+  fill: red;
+}
+
+nav img {
+  fill: inherit;
+  cursor: pointer;
+}
+
+nav img:hover {
+  fill: aqua;
+}
+
+/* underline fade in up */
+/* udla {
+  display: inline-block;
+  position: relative;
+}
+
+udla::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.2em;
+  background-color: rgb(255, 230, 120);
+  transition: opacity 300ms, transform 300ms;
+  opacity: 0;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+section:hover udla::after, section:focus udla::after {
+  opacity: 1;
+  transform: translate3d(0, 0.05em, 0);
+} */
